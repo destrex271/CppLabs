@@ -9,7 +9,12 @@ class A{
         void show(){
             cout << "OK!" << endl;
         }
+        friend void Fr();
 };
+
+void Fr(){
+    cout << A::a << endl;
+}
 
 class B : public A{
     public:
